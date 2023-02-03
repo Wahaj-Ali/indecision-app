@@ -1,15 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AddOption = (props) => {
+const Option = (props) => {
   const { optionText } = props;
   return (
-    <div>{optionText}</div>
+    <div>
+      {optionText}
+    </div>
   );
 };
 
-AddOption.propTypes = {
+Option.propTypes = {
   optionText: PropTypes.string,
 }.isRequired;
 
-export default AddOption;
+export default Option;
